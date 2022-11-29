@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row mt-5">
+                <h1 class="text-secondary text-center">User Informations</h1>
+                <hr>
+                <div *ngFor="let i of product.products" class="col col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 g-5">
+
+                    <div class="card" >
+                        <img src="{{i.thumbnail}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">{{i.description}}</p>
+                          <p class="text-danger">₹{{i.price}}</p>
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
