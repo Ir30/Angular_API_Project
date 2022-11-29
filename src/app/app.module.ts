@@ -5,17 +5,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerComponent } from './passenger/passenger.component';
+import { UsDataComponent } from './us-data/us-data.component';
 
 const MyRoute:Routes=[
   {
     path:"",
     component:PassengerComponent
+  },
+  {
+    path:"us_data",
+    component:UsDataComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    PassengerComponent
+    PassengerComponent,
+    UsDataComponent
   ],
   imports: [
     BrowserModule,
