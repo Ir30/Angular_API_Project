@@ -2,19 +2,18 @@ import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-user2',
-  templateUrl: './user2.component.html',
-  styleUrls: ['./user2.component.css']
+  selector: 'app-to-do',
+  templateUrl: './to-do.component.html',
+  styleUrls: ['./to-do.component.css']
 })
-export class User2Component {
-
+export class ToDoComponent {
   constructor(private api:ApiService){
-    api.fetchUser2().subscribe(
+    api.fetchTodo().subscribe(
       (response)=>{
         this.data=response
       }
     )
   }
   data:any=[]
-  
+
 }

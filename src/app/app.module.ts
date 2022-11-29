@@ -9,6 +9,8 @@ import { UsDataComponent } from './us-data/us-data.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductComponent } from './product/product.component';
 import { User2Component } from './user2/user2.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToDoComponent } from './to-do/to-do.component';
 
 const MyRoute:Routes=[
   {
@@ -30,6 +32,10 @@ const MyRoute:Routes=[
   {
     path:"user2",
     component:User2Component
+  },
+  {
+    path:"todo",
+    component:ToDoComponent
   }
 ]
 @NgModule({
@@ -39,12 +45,15 @@ const MyRoute:Routes=[
     UsDataComponent,
     UserInfoComponent,
     ProductComponent,
-    User2Component
+    User2Component,
+    ToDoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(MyRoute)
+    RouterModule.forRoot(MyRoute),
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
