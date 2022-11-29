@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row mt-5">
+                <h1 class="text-secondary text-center">Passengers List</h1>
+                <hr>
+                <table class="table mt-3">
+
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Trips</th>
+                        <th scope="col">Airline</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of data.data">
+                        <td>{{i._id}}</td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.trips}}</td>
+                        <td>{{i.airline[0].name}}</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
