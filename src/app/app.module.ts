@@ -9,6 +9,7 @@ import { UsDataComponent } from './us-data/us-data.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductComponent } from './product/product.component';
 import { User2Component } from './user2/user2.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const MyRoute:Routes=[
   {
@@ -39,12 +40,14 @@ const MyRoute:Routes=[
     UsDataComponent,
     UserInfoComponent,
     ProductComponent,
-    User2Component
+    User2Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(MyRoute)
+    RouterModule.forRoot(MyRoute),
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
