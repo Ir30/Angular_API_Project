@@ -8,6 +8,7 @@ import { PassengerComponent } from './passenger/passenger.component';
 import { UsDataComponent } from './us-data/us-data.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductComponent } from './product/product.component';
+import { User2Component } from './user2/user2.component';
 
 const MyRoute:Routes=[
   {
@@ -25,6 +26,10 @@ const MyRoute:Routes=[
   {
     path:"product",
     component:ProductComponent
+  },
+  {
+    path:"user2",
+    component:User2Component
   }
 ]
 @NgModule({
@@ -33,7 +38,8 @@ const MyRoute:Routes=[
     PassengerComponent,
     UsDataComponent,
     UserInfoComponent,
-    ProductComponent
+    ProductComponent,
+    User2Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row mt-5">
+                <h1 class="text-secondary text-center">User Informations</h1>
+                <hr>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">First Nmae</th>
+                        <th scope="col">Last Nmae</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Emaile</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">birthDate</th>
+
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of data.users">
+                        <td>{{i.firstName}}</td>
+                        <td>{{i.lastName}}</td>
+                        <td>{{i.age}}</td>
+                        <td>{{i.gender}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.phone}}</td>
+                        <td>{{i.birthDate}}</td>
+
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
